@@ -8,7 +8,7 @@ class Hero {
   //Constructor
   Hero(int size) {
     this.size = size;
-    test = loadImage("test.png");
+    test = loadImage("RowBoat.png");
     r = 3;
     health = r;
   }
@@ -18,12 +18,13 @@ class Hero {
     y = mouseY;
     image(test, mouseX, mouseY, 50, 50);
   }
-
+  
   int topPosition() {
     return y;
   }
-
+  
   int bottomPosition() {
     return y+20;
   }
+  
 }
