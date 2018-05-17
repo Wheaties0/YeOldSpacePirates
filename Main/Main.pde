@@ -1,4 +1,4 @@
-//<>//
+ //<>//
 ArrayList<Laser> lasers;
 float beamSpawn;
 boolean beamActive, hasRun;
@@ -189,6 +189,6 @@ void death() {
   textAlign(CENTER);
   fill(222);
   textSize(25);
-  text("Game Over! YOU LOSE CAUSE YOU SUCK!!! SUCKS TO SUCK SUCKER!!!!", width/2, height/2);
+  text("Game Over! YOU LOSE CAUSE YOU SUCK!!! fill SUCKS TO SUCK SUCKER!!!!", width/2, height/2);
   noLoop();
 }
