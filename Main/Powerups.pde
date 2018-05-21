@@ -1,3 +1,4 @@
+
 class Powerups {
   int luck, px, py;
   PImage life;

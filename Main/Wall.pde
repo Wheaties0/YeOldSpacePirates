@@ -1,9 +1,10 @@
 class Wall {
-  int x, y, w, h;
+  int x, y, w, h, yInit;
   int s;
 
   Wall(int x, int y, int w, int h) {
     this.x = x;
+    this.yInit = y;
     this.y = y;
     this.w = w;
     this.h = h;
@@ -22,4 +23,10 @@ class Wall {
   int getBottomBoundary() {
     return (y + ((h + s * 2) / 2));
   }
+  
+  void reset(){
+    this.y = yInit;
+  }
+  
+  
 }

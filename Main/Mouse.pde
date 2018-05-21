@@ -8,7 +8,6 @@ class Mouse {
   //Constructor
   Mouse(int size) {
     this.size = size;
-    //mouse = loadImage("Mouse.png");
     mouse = loadImage("goodMouse.png");
     r = 3;
     health = r;

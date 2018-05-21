@@ -4,13 +4,15 @@ class Hero {
   PImage test;
   int x, y, r;
   int health;
-
+  int score;
+  
   //Constructor
   Hero(int size) {
     this.size = size;
-    test = loadImage("RowBoat.png");
+    test = loadImage("test.png");
     r = 3;
     health = r;
+    score = 0;
   }
 
   void display() {
@@ -18,13 +20,12 @@ class Hero {
     y = mouseY;
     image(test, mouseX, mouseY, 50, 50);
   }
-  
+
   int topPosition() {
-    return y;
+    return y-3;
   }
-  
+
   int bottomPosition() {
-    return y+20;
+    return y+53;
   }
-  
 }

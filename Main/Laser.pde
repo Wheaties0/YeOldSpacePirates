@@ -1,3 +1,4 @@
+
 class Laser {
   //int fx, fy;
   int x, y;
@@ -9,7 +10,7 @@ class Laser {
     r = 4; 
     this.x = x; 
     this.y = y; 
-    speed = random(5, 30);
+    speed = random(5*level + 1, 5 + 5*level);
   }
 
   void fire() {

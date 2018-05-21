@@ -1,3 +1,4 @@
+
 class Ship {
   PImage img;
   int x, y, w, h;
@@ -12,10 +13,10 @@ class Ship {
   }
 
   void display() {
-    img = loadImage("SpacePirateShip.png");
+    img = loadImage("PurpleSpaceship.png");
     image(img, x, y, w, h);
   }
-  
+
   void movement() {
     if (up) {
       y-=5;
@@ -26,15 +27,15 @@ class Ship {
       y+=5;
     }
   }
-  
+
   void setrandom() {
     up = !up;
   }
-  
+
   int topPosition() {
     return y;
   }
-  
+
   int bottomPosition() {
     return y + h;
   }

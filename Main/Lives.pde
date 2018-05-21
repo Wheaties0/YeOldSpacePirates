@@ -22,6 +22,10 @@ class Lives {
         image(testup, 100, 435, 50, 50);
       } else if (l == 1) {
         image(testup, 50, 435, 50, 50);
+      } else {
+        fill(100);
+        noStroke();
+        rect(50, 435,50,50);
       }
     }
   }
